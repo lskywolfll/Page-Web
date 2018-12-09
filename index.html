@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>Nuevo Sitio Web</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Banner -->
+        <div class="Banner-wrapper">
+        <header>
+            <div class="header-inner">
+            <a href="index.html" id="logo">
+                <img src="./css/img/flor.jpg" alt="flor" width="200" height="150">
+            </a>
+            <nav>
+                <a href="#" id="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#Skills">Habilidades</a></li>
+                    <li><a href="#Portfolio">Portafolio</a></li>
+                    <li><a href="#Service">Servicios</a></li>
+                    <li><a href="#Contac">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+                <section class="slide-wrap">
+                    <ul class="slider1">
+                    <li><img src="./css/sliders/image.jpg" alt="flor"></li>
+                    <li><img src="./css/sliders/imagen2.jpg" alt="flor2"></li>
+                    <li><img src="./css/sliders/image3.jpg" alt="flor3"></li>
+                    </ul>
+                </section>
+
+        </div>
+    </div>
+    <section class="one-third" id="skills">
+     <div class="icon-wrap">
+         <i class="fa fa-desktop"></i>
+     </div>
+     <h3>Diseño Web</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum architecto quia provident sequi vero odio impedit reprehenderit, assumenda nesciunt alias excepturi perspiciatis praesentium, quisquam distinctio voluptates recusandae aut quae.</p>
+    </section>
+
+        <section class="one-third" id="skills">
+                <div class="icon-wrap">
+                    <i class="fa fa-pencil-square-o"></i>
+                </div>
+                <h3>Diseño Web</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum architecto quia provident sequi vero odio impedit reprehenderit, assumenda nesciunt alias excepturi perspiciatis praesentium, quisquam distinctio voluptates recusandae aut quae.</p>
+            </section>
+
+                    <section class="one-third" id="skills">
+                            <div class="icon-wrap">
+                                <i class="fa fa-file-code-o"></i>
+                            </div>
+                            <h3>Desarrollo Web</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum architecto quia provident sequi vero odio impedit reprehenderit, assumenda nesciunt alias excepturi perspiciatis praesentium, quisquam distinctio voluptates recusandae aut quae.</p>
+                        </section> 
+    <!-- servicios -->
+    <div class="one-third-padding" id="services">
+    <h3>Nuestras servicios</h3>
+    <img src="./css/img/icon1.jpg" alt="icon1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cum?</p>
+    
+    <h3>Nuestras servicios 2</h3>
+    <img src="./css/img/icon2.jpg" alt="icon1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cum?</p>
+
+    <h3>Nuestras Servicios 3</h3>
+    <img src="./css/img/icon3.jpg" alt="icon1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cum?</p>
+    </div>
+    
+    <footer>
+      <div class="banner-wrapper">
+          <div class="icon-text">
+              <div class="icon-text-icon">
+                  <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="#skills">Habilidades</a></li>
+                      <li><a href="#portfolio">Portafolio</a></li>
+                      <li><a href="#">Nuestro equipo</a></li>
+                      <li><a href="#">Contacto</a></li>
+                  </ul>
+              </div>
+              <div class="icon-text-text">
+                 <ul>
+                     <li><a href="mailto: contacto@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                     <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="http://youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                     <li><a href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                 </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <footer class="second-footer">
+      <p>
+          &copy; <a href="www.google.com" target="_blank">Ventas.com</a>
+      </p>
+    </footer>
+    <!-- Scripts para el efecto de las imagenes de traslado
+          Desvanecimiento-->
+    <script>
+        // Uso de libreria jquery del cual se llamo al inicio
+    $(document).ready(function()
+    {
+        $('.slider1').bxSlider({  //Dentro de '' va el el nombre segun si es una clase o id(class => . || id => #)
+            mode: 'fade' //Desvanecimiento
+        })
+
+        $('.slider1').bxSlider({
+            mode: 'fade'
+        })
+
+        $('.slider1').bxSlider({
+            mode: 'fade'
+        })
+    })
+    </script>
+</body>
+</html>
